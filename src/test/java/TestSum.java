@@ -12,18 +12,18 @@ public class TestSum {
     }
 
     @Test
-    public void testSumCalculatorWorksCorrect1() {
+    public void testSumCalculatorOneShouldBeOne() {
         Assertions.assertEquals(1, calculator.sum(1));
 
     }
     @Test
-    public void testSumCalculatorWorksCorrect2() {
+    public void testSumCalculatorOneShouldBeSix() {
 
         Assertions.assertEquals(6, calculator.sum(3));
 
     }
     @Test
-    public void testSumCalculatorWorksCorrect3() {
+    public void testSumCalculator0ShouldThrowsException() {
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             calculator.sum(0);
